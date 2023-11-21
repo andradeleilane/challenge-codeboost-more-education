@@ -1,0 +1,155 @@
+.s-hero {
+    width: 100%;
+    background-color: $gray-200;
+    padding-top: 19.3rem;
+    padding-bottom: 18rem;
+    overflow-x: hidden;
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .left {
+        position: relative;
+        width: 100%;
+        max-width: 56.4rem;
+        margin-top: 1.6rem;
+        .star-hero {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        h1 {
+            position: relative;
+            z-index: 1;
+            color: $gray-900;
+            font-family: 'Poppins', sans-serif;
+            font-size: 6rem;
+            font-weight: 600;
+            line-height: 7rem;
+            letter-spacing: -0.12rem;
+            margin-bottom: 2.6rem;
+            &::after {
+                content: '';
+                width: 43.5rem;
+                height: 0.8rem;
+                background-color: $yellow;
+                position: absolute;
+                bottom: 1.2rem;
+                left: 0;
+                z-index: -1;
+            }
+        }
+        p {
+            color: $gray-500;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 160%; /* 1.8rem */ 
+            margin-bottom: 2.5rem;
+        }
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 52rem;
+            height: 6.9rem;
+            background-color: $gray-100;
+            border-radius: 7.625rem;
+            box-shadow: 0px 15px 30px -10px rgba(204, 206, 219, 0.40);
+            margin-bottom: 5.6rem;
+            padding-left: 3.4rem;
+            padding-right: 1.5rem;
+            input {
+                flex: 1px;
+                margin-right: 2rem;
+                border: none;
+                color: $gray-900;
+                font-size: 1.5rem;
+                line-height: 150%; /* 1.5rem */
+                letter-spacing: -0.005rem;
+                &::placeholder {
+                    color: $gray-500;
+                }
+
+            }
+            button {
+                padding: 1.5rem 2.8rem;
+                background-color: $gray-900;
+                color: $gray-50;
+                border-radius: 97.6px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1rem;
+                font-weight: 500;
+                letter-spacing: -0.00875rem;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-bottom: 6rem;
+        }
+        .review {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+            span {
+                display: flex;
+                align-items: center;
+                gap: 0.6rem;
+                color: $gray-500;
+                font-size: 1rem;
+                line-height: normal;
+            }
+        }
+
+    }
+    .right {
+        position: relative;
+        right: -11.2rem;
+    }
+}
+
+.s-card {
+    padding-bottom: 11.6rem;
+    margin-top: -116px;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card {
+        width: 100%;
+        max-width: 38.4rem;
+        height: 21.6rem;
+        border-radius: 12px;
+        background-color: $gray-100;
+        box-shadow: 0px 24px 44px -11px rgba(181, 183, 192, 0.30); 
+        padding: 4.8rem 5.4rem 4rem 4rem;
+        .icon {
+            margin-bottom: 2.9rem;
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text {
+            h3 {
+                color: $gray-900;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5rem;
+                font-weight: 700;
+                line-height: 150%; /* 2.0625rem */ 
+                margin-bottom: 0.3rem; 
+            }
+            p {
+                color: $gray-500;
+                font-size: 1.2rem;
+                font-weight: 400;
+                line-height: 160%; /* 1.6rem */
+            }
+        }
+    }
+}
